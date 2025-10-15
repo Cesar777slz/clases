@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main ();
+   float a=0;
+   float b=0;
+   float c=0;
+   float discriminante= 0;
+   float PrimerResultado= 0;
+   float SegundoResultado = 0;
+   float coeficiente = 0;
+   
+   cout << "ingrese la variable a:" << endl;
+   cin >> a;
+
+   cout << "ingrese la variable b:" << endl;
+   cin >> b;
+
+   cout <<"ingrese la variable c:" << endl;
+   cin >> c;
+
+discriminante = b * b - (4 * a * c);
+ 
+if(a==0){
+	cout << "no es una ecuacion cuadratica"<< endl;
+}
+
+else if (discriminante < 0){
+	cout << "no tiene raiz" << endl;
+}
+
+else if (discriminante > 0){
+    cout << "tiene dos raices" << endl;
+    PrimerResultado = (-b + sqrt(discriminante)) / (2 * a);
+    cout << " el primer resultado es=" << PrimerResultado << endl;
+    
+    SegundoResultado = (-b - sqrt(discriminante)) / (2 * a);
+    cout << " el segundo resultado es=" << SegundoResultado << endl;
+    
+}
+
+else if(discriminante == 0){
+	cout << "tiene una raiz" << endl;
+	PrimerResultado = (-b + sqrt(discriminante)) / (2 * a);
+	cout << " El primer resultado es= " << PrimerResultado << endl;
+}
+
+
+return 0;
+
+}
